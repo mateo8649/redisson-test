@@ -1,0 +1,19 @@
+group 'com.pete'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  compile 'org.redisson:redisson:3.6.4'
+}
+
+run {
+  mainClassName  = "com.pete.RedissonTest"
+}
